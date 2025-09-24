@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+
+.box-sizing{
+
+@apply rounded-md p-7 text-white h-[250px] p-6 text-white flex flex-col items-center justify-center
+}
