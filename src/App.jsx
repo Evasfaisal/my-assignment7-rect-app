@@ -4,6 +4,8 @@ import NavBar from './component/NavBar';
 import Footer from './component/Footer';
 import CountBox from './CountBox';
 import Main from './component/Main';
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const fetchIssues = async () => {
   const result = await fetch("/data.json");
@@ -26,6 +28,7 @@ const App = () => {
 
 
 <Footer></Footer>
+      <ToastContainer position="top-right" autoClose={2000} />
 
     </>
   );

@@ -1,10 +1,23 @@
 import React, { useState } from 'react';
+import {toast} from "react-toastify"
 
 const MainBox = ({ data,index }) => {
     const [isSelected,setSelected]=useState(true)
+
+
+
     return (
         <div>
-            <div onClick={() => setSelected(!isSelected)}
+            <div onClick={() => {
+                setSelected(!isSelected);
+                toast.success(`${data.title} added to Task Status!`, {
+                    position: "top-right",
+                    autoClose: 2000,
+                });
+            }}
+
+
+
                 key={index}
                 className="w-full p-6 bg-white rounded-3xl shadow-md border border-gray-200"
             >

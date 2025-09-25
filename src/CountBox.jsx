@@ -15,7 +15,7 @@ const CountBox = () => {
                             
                             }}
                         >
-                            <h2 className="font-bold text-[35px]">Pending</h2>
+                            <h2 className="font-bold text-[35px]">In-Progress</h2>
                             <p className="font-semibold text-[46px]">0</p>
                         </div>
                     </div>
@@ -27,7 +27,7 @@ const CountBox = () => {
                                 backgroundImage: `url(${vector1})`
                             }}
                         >
-                            <h2 className="font-bold text-[35px]">Submitted</h2>
+                            <h2 className="font-bold text-[35px]">Resolved</h2>
                             <p className="font-semibold text-[46px]">0</p>
                         </div>
                     </div>
