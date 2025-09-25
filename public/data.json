@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "title": "Login Failure",
+    "description": "Customer repeatedly attempted to log in using correct credentials, but the system consistently rejects the request. Error messages vary between timeout and generic invalid credentials notice. Both web and mobile versions are affected, preventing access to crucial data. This issue disrupts daily workflow and requires urgent resolution immediately.",
+    "customer": "Alice Johnson",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2025-09-25T09:10:00Z"
+  },
+  {
+    "id": 2,
+    "title": "Password Reset Link Broken",
+    "description": "Customer reports that clicking the password reset link from email redirects to an invalid request error page. The issue persists after multiple attempts across different devices and browsers. Cache clearing and incognito browsing failed to resolve. This problem blocks customer login and prevents them from accessing their account entirely.",
+    "customer": "Bob Smith",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2025-09-24T16:20:00Z"
+  },
+  {
+    "id": 3,
+    "title": "Slow Dashboard Loading",
+    "description": "After login, the dashboard requires more than 30 seconds to load, causing significant delays in task execution. Some widgets fail to render and occasionally trigger a page crash. The issue occurs consistently across multiple browsers and devices. This slowdown is seriously impacting productivity, making it difficult to manage tasks.",
+    "customer": "Charlie Davis",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2025-09-23T11:45:00Z"
+  },
+  {
+    "id": 4,
+    "title": "Error 404 on Settings",
+    "description": "Whenever the customer attempts to access the settings page, a persistent 404 error message is displayed. This issue began following the most recent system update. Other sections of the application continue to work normally, but inability to access settings prevents necessary updates to personal information or key system preferences.",
+    "customer": "Diana Lee",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2025-09-22T15:30:00Z"
+  },
+  {
+    "id": 5,
+    "title": "Dark Mode Feature Request",
+    "description": "Customer requests the implementation of a dark mode toggle to improve nighttime usability and reduce eye strain. They emphasize prolonged use of bright screens negatively affects comfort. Additionally, they suggested customizable themes and adjustable font sizes, which could provide better accessibility for users with specific visual or ergonomic needs.",
+    "customer": "Ethan Brown",
+    "priority": "Low",
+    "status": "Open",
+    "createdAt": "2025-09-21T08:20:00Z"
+  },
+  {
+    "id": 6,
+    "title": "Invoice PDF Missing Items",
+    "description": "Generated invoice PDFs occasionally exclude purchased products or service charges, leading to incorrect financial reporting. Missing line items create inconsistencies and disrupt client billing. Customers are unable to reconcile records properly, causing accounting delays. The issue has been observed across multiple accounts, making invoices unreliable for official business use.",
+    "customer": "Fiona Wilson",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2025-09-20T16:10:00Z"
+  },
+  {
+    "id": 7,
+    "title": "Email Notification Failure",
+    "description": "Customer updates tickets but no email notifications are triggered, even with verified notification settings enabled. This failure leads to missed updates, reducing communication efficiency and delaying issue resolution. Teams depending on timely alerts are unable to coordinate effectively. Problem persists across multiple accounts, suggesting it is a widespread bug.",
+    "customer": "George Clark",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2025-09-19T11:55:00Z"
+  },
+  {
+    "id": 8,
+    "title": "Profile Picture Not Updating",
+    "description": "Customer attempts to upload a new profile photo, but system reverts to the old image. This issue occurs on both desktop and mobile versions of the app. Inability to update profile impacts identity verification and team collaboration. Problem persists despite clearing cache, logging out, and trying on multiple devices.",
+    "customer": "Hannah Martin",
+    "priority": "Low",
+    "status": "Open",
+    "createdAt": "2025-09-18T14:40:00Z"
+  },
+  {
+    "id": 9,
+    "title": "Recurring Payment Failure",
+    "description": "Customer attempted multiple payments using Mastercard ending 5678, but all transactions failed with generic error messages. Other payment methods occasionally succeed, but this card is essential for recurring payments. Failed transactions are delaying orders and lowering satisfaction. The issue needs urgent investigation to avoid financial and business disruptions.",
+    "customer": "Ian Thompson",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2025-09-17T09:25:00Z"
+  },
+  {
+    "id": 10,
+    "title": "Mobile UI Glitch",
+    "description": "On smaller screens, buttons overlap and sometimes become unclickable, especially when scrolling or switching orientation. This glitch disrupts navigation and prevents form submission or feature access. Customers report frustration using the mobile version, as it hinders critical tasks. The bug impacts usability and damages overall customer experience significantly.",
+    "customer": "Jessica Lewis",
+    "priority": "Low",
+    "status": "Open",
+    "createdAt": "2025-09-16T13:15:00Z"
+  },
+  {
+    "id": 11,
+    "title": "Two-Factor Authentication Issue",
+    "description": "Customer is unable to complete login using two-factor authentication. Verification codes are delayed or fail to arrive, blocking account access. Attempts with backup codes also fail. This prevents customers from accessing sensitive accounts, raising security and productivity concerns. Issue has been reported by several users, requiring immediate technical attention.",
+    "customer": "Kevin Wright",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2025-09-15T10:10:00Z"
+  },
+  {
+    "id": 12,
+    "title": "Export Data Corruption",
+    "description": "Customer attempted to export reports to CSV format, but files become corrupted or contain missing values. Data integrity issues make it impossible to share or analyze information accurately. The problem disrupts business reporting processes, requiring manual correction. This technical bug is time-consuming and negatively affects workflow across multiple departments.",
+    "customer": "Laura Scott",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2025-09-14T09:00:00Z"
+  }
+]
