@@ -22,7 +22,7 @@ const Main = ({ fetchPromise }) => {
                     : data
             )
         );
-        toast.success("Ticket moved to In-Progress!", { autoClose: 1000 });
+        toast.success("Ticket moved to In-Progress!",);
     };
 
     const handleComplete = (id) => {
@@ -33,15 +33,15 @@ const Main = ({ fetchPromise }) => {
                     : data
             )
         );
-        toast.success("Ticket Resolved!", { autoClose: 1000 });
+        toast.success("Ticket Resolved!", );
     };
 
     return (
-        <div>
-            <CountBox inProgressCount={inProgressCount} resolvedCount={resolvedCount} />
+        <div className=" mb-8">
 
+            <CountBox inProgressCount={inProgressCount} resolvedCount={resolvedCount} />
             <Container>
-                <div className="flex flex-col lg:flex-row gap-6">
+                <div className="flex flex-col lg:flex-row gap-6 ">
                     {/* Customer Tickets */}
                     <div className="flex-1">
                         <h1 className="font-bold text-2xl mb-4">Customer Tickets</h1>
@@ -54,15 +54,15 @@ const Main = ({ fetchPromise }) => {
                         </div>
                     </div>
 
-                    {/* Task Status */}
+                   
                     <div className="w-full lg:w-[320px]">
-                        <h1 className="font-semibold text-xl mb-2">Task Status</h1>
+                        <h1 className="font-semibold text-xl mb-2 ">Task Status</h1>
                         {tickets
                             .filter((data) => data.status === "in-progress")
                             .map((data) => (
                                 <div
                                     key={data.id}
-                                    className="border rounded-lg p-4 bg-white shadow-sm mb-3"
+                                    className="rounded-lg p-4 bg-white shadow-sm mb-3"
                                 >
                                     <h1 className="font-bold text-center">{data.title}</h1>
                                     <button
@@ -80,7 +80,7 @@ const Main = ({ fetchPromise }) => {
                             .map((data) => (
                                 <div
                                     key={data.id}
-                                    className="border rounded-lg p-4 bg-white shadow-sm mb-3"
+                                    className="rounded-lg p-4 bg-white shadow-sm mb-3"
                                 >
                                     <h1 className="font-bold text-center">{data.title}</h1>
                                 </div>

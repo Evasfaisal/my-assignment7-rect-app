@@ -1,35 +1,43 @@
-import React from 'react';
-import Container from './Container';
 
+
+import React from "react";
+import { FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+import Container from "./Container";
 
 const Footer = () => {
     return (
-        <div>
-                <footer className="bg-black text-gray-300 py-10">
-           <Container>
-                    <div className=" px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
 
-                   
+        <div>
+                <footer className="bg-black text-gray-400">
+            <Container>
+
+                    <div className=" px-6 py-12 grid grid-cols-1 md:grid-cols-5 gap-10">
+
                         <div>
-                            <h2 className="text-white text-lg font-semibold">CS — Ticket System</h2>
-                            <p className="text-sm mt-4 leading-6 text-gray-400">
-                                Book your flight now and enjoy a seamless travel experience. Secure your air ticket to your favorite destination with flexible dates and affordable fares. Enjoy priority boarding, in-flight entertainment, and premium services. Reserve your seat today to make your journey comfortable, safe, and unforgettable with our trusted airline services.
+                            <h2 className="text-white text-lg font-semibold mb-3">
+                                CS — Ticket System
+                            </h2>
+                            <p className="text-sm leading-6">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum has been the industry's standard dummy text
+                                ever since the 1500s, when an unknown printer took a galley of type
+                                and scrambled it to make a type specimen book.
                             </p>
                         </div>
 
-                      
                         <div>
-                            <h3 className="text-white font-semibold mb-4">Company</h3>
+                            <h3 className="text-white font-medium mb-3">Company</h3>
                             <ul className="space-y-2 text-sm">
                                 <li><a href="#" className="hover:text-white">About Us</a></li>
                                 <li><a href="#" className="hover:text-white">Our Mission</a></li>
-                                <li><a href="#" className="hover:text-white">Contact Saled</a></li>
+                                <li><a href="#" className="hover:text-white">Contact Sales</a></li>
                             </ul>
                         </div>
 
-                      
+
                         <div>
-                            <h3 className="text-white font-semibold mb-4">Services</h3>
+                            <h3 className="text-white font-medium mb-3">Services</h3>
                             <ul className="space-y-2 text-sm">
                                 <li><a href="#" className="hover:text-white">Products & Services</a></li>
                                 <li><a href="#" className="hover:text-white">Customer Stories</a></li>
@@ -37,36 +45,45 @@ const Footer = () => {
                             </ul>
                         </div>
 
-                       
+
                         <div>
-                            <h3 className="text-white font-semibold mb-4">Information</h3>
+                            <h3 className="text-white font-medium mb-3">Information</h3>
                             <ul className="space-y-2 text-sm">
                                 <li><a href="#" className="hover:text-white">Privacy Policy</a></li>
                                 <li><a href="#" className="hover:text-white">Terms & Conditions</a></li>
                                 <li><a href="#" className="hover:text-white">Join Us</a></li>
                             </ul>
                         </div>
+
+
+                        <div>
+                            <h3 className="text-white font-medium mb-3">Social Links</h3>
+                            <ul className="space-y-3 text-sm">
+                                <li className="flex items-center gap-2 hover:text-white">
+                                    <FaTwitter size={16} /> @CS — Ticket System
+                                </li>
+                                <li className="flex items-center gap-2 hover:text-white">
+                                    <FaLinkedin size={16} /> @CS — Ticket System
+                                </li>
+                                <li className="flex items-center gap-2 hover:text-white">
+                                    <FaFacebook size={16} /> @CS — Ticket System
+                                </li>
+                                <li className="flex items-center gap-2 hover:text-white">
+                                    <MdEmail size={16} /> support@cst.com
+                                </li>
+                            </ul>
+                        </div>
                     </div>
 
-                 
-                    <div className="max-w-7xl mx-auto px-6 mt-10 border-t border-gray-700 pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
-
-                       
-                        <div className="flex space-x-6 text-sm">
-                            <a href="#" className="hover:text-white">✖ @CS — Ticket System</a>
-                            <a href="#" className="hover:text-white">in @CS — Ticket System</a>
-                            <a href="#" className="hover:text-white">f @CS — Ticket System</a>
-                            <a href="mailto:support@cst.com" className="hover:text-white">support@cst.com</a>
-                        </div>
-
-                        
+                    <div className="border-t border-gray-700 mt-8 pt-6 pb-4 text-center">
                         <p className="text-xs text-gray-500">
                             © 2025 CS — Ticket System. All rights reserved.
                         </p>
                     </div>
-           </Container>
+            </Container>
                 </footer>
         </div>
+
     );
 };
 

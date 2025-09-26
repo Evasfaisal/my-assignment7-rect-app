@@ -4,7 +4,7 @@ const TicketCard = ({ ticket, onClick, isTaskStatus = false }) => {
     return (
         <div
             onClick={!isTaskStatus ? () => onClick(ticket.id) :''}
-            className="p-6 bg-white rounded-3xl shadow-md border cursor-pointer"
+            className="p-6 bg-white rounded-3xl shadow-md  cursor-pointer"
         >
             <div className="flex justify-between items-center mb-4">
                 <h2 className="text-lg font-semibold">{ticket.title}</h2>
