@@ -23,7 +23,7 @@ const App = () => {
 
 
     
-      <Suspense fallback={<h1>loading....</h1>}>
+      <Suspense>
         <Main  fetchPromise={fetchPromise}></Main>
         </Suspense>
 
