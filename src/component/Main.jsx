@@ -15,19 +15,19 @@ const Main = ({ fetchPromise }) => {
     const resolvedCount = tickets.filter((data) => data.status === "resolved").length;
 
     const handleTicketClick = (id) => {
-        setTickets((prev) =>
-            prev.map((data) =>
+        setTickets((previousData) =>
+            previousData.map((data) =>
                 data.id === id && data.status === "open"
-                    ? { ...data, status: "in-progress" }
-                    : data
-            )
-        );
-        toast.success("Ticket moved to In-Progress!",);
-    };
+        ? { ...data, status: "in-progress" }
+        : data
+    )
+);
+toast.success("Ticket moved to In-Progress!",);
+};
 
     const handleComplete = (id) => {
-        setTickets((prev) =>
-            prev.map((data) =>
+        setTickets((previousData) =>
+            previousData.map((data) =>
                 data.id === id && data.status === "in-progress"
                     ? { ...data, status: "resolved" }
                     : data
